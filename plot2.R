@@ -18,7 +18,7 @@ household_subset <- household %>% filter(Date == ymd("2007-02-01") | Date == ymd
 ############################
 # Plot 2
 ############################
-png("plot2.png") 
+png("plot2.png",width = 480, height = 480) 
 
 x<-as.numeric(household_subset$Global_active_power)
 

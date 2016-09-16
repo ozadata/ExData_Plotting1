@@ -18,7 +18,7 @@ household_subset <- household %>% filter(Date == ymd("2007-02-01") | Date == ymd
 ############################
 # Plot 1
 ############################
-png("plot1.png")
+png("plot1.png",width = 480, height = 480)
 
 hist(as.numeric(household_subset$Global_active_power),col = "red",main = 
              "Global Active Power", xlab = "Global Active Power (kilowatts)")

@@ -23,7 +23,7 @@ x<-as.numeric(household_subset$Sub_metering_1)
 y<-as.numeric(household_subset$Sub_metering_2)
 z<-as.numeric(household_subset$Sub_metering_3)
 
-png("plot3.png") 
+png("plot3.png",width = 480, height = 480) 
 
 par(mar=c(5,4,2,5))
 plot(x, type = "n",xlab=" ", ylab = "Energy sub metering", xaxt = "n")
